@@ -10,6 +10,6 @@ RUN go build -o app
 FROM gcr.io/distroless/base AS deploy
 WORKDIR /
 COPY --from=build /app .
-EXPOSE 80
+EXPOSE 8080
 ENTRYPOINT ["./app"]
 

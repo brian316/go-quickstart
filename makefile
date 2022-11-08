@@ -10,7 +10,7 @@ build:
 	docker build --tag go-quickstart .
 
 run:
-	docker run -d -p 80:80 -it go-quickstart
+	docker run -d -p 8080:8080 -it go-quickstart
 
 test:
 	curl localhost/ping
