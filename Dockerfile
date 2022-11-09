@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 # Build
-FROM ubi8/go-toolset
+FROM registry.access.redhat.com/ubi8/go-toolset
 WORKDIR /app
 COPY . /app/
 RUN go mod download
