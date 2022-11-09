@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 # Build
-FROM golang:latest
+FROM ubi9/go-toolset
 WORKDIR /app
 COPY . /app/
 RUN go mod download
