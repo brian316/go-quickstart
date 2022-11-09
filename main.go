@@ -8,11 +8,12 @@ import (
 
 func setupRouter() *gin.Engine {
 	r := gin.Default()
+	// alive check
 	r.GET("/ping", func(c *gin.Context) {
 		c.String(http.StatusOK, "pong")
 	})
+	// success message
 	r.GET("/", func(c *gin.Context) {
-		// create a anchor tag with href to /ping
 		c.String(http.StatusOK, "Successfully Deployed to OpenShift!")
 	})
 	return r
